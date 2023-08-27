@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.8.12)
 
+project(harfbuzz-icu-freetype DESCRIPTION "Modified harfbuzz build for Moth UI")
+
 if(POLICY CMP0054)
     cmake_policy(SET CMP0054 NEW)
 endif()
@@ -28,7 +30,7 @@ if (IOS)
     set(HAVE_STDINT_H 1 CACHE INTERNAL "Have include stdint.h" FORCE)
 endif()
 
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/freetype)
+#add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/freetype)
 
 ## ICU-common ##
 ################
